@@ -1,0 +1,1231 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------
+   base
+---------------------------------------------------------------------*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #fff;
+    text-align: center;
+    color: #333;
+    font-size: 13px;
+    font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
+}
+
+.win.chrome body {
+    font-family: 'メイリオ', Meiryo, " ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Osaka, Sans-Serif;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+.iphone body,
+.ipad body,
+.ipod body {
+    cursor: pointer;
+}
+
+a:link {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+a:active {
+    color: #000;
+}
+
+a:hover {
+    color: #666;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img {
+    font-size: 0;
+    line-height: 0;
+}
+
+
+/*--------------------------------------------------------------------
+   wrap
+---------------------------------------------------------------------*/
+
+.row,
+header,
+#contents,
+footer nav {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+/*--------------------------------------------------------------------
+   header
+---------------------------------------------------------------------*/
+
+header {
+    height: 150px;
+    position: relative;
+}
+
+header h1,
+header .logo {
+    width: 350px;
+    height: 110px;
+    margin-top: 0px;
+    float: left;
+    overflow: hidden;
+}
+
+header h1 a,
+header .logo a {
+    display: block;
+    background: url(../images/logo.svg) 0 50% no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 101%;
+    line-height: 0;
+    font-size: 0.1em;
+}
+
+header nav {
+    margin-left: 270px;
+    text-align: right;
+}
+
+header nav ul {
+    padding-top: 40px;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: block;
+    font-size: 0.929em;
+    line-height: 36px;
+    padding: 0 20px;
+}
+
+header nav ul li a:hover {
+    color: rgb(219, 87, 87);
+}
+
+header nav li.navContact {
+    width: 126px;
+    height: 36px;
+    margin-left: 20px;
+}
+
+header nav li.navContact a {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 0;
+    font-size: 0.857em;
+    line-height: 36px;
+    color: #fff;
+    background-color: #fb9d9d;
+    border-radius: 18px;
+    text-align: center;
+}
+
+header nav li.navContact a:hover {
+    background-color: rgb(219, 87, 87);
+    color: #fff;
+}
+
+#spmenu {
+    display: none;
+}
+
+#menubtn {
+    display: none;
+}
+
+
+/*--------------------------------------------------------------------
+   footer
+---------------------------------------------------------------------*/
+
+#page-top {
+    position: fixed;
+    width: 46px;
+    height: 46px;
+    bottom: 30px;
+    right: 15px;
+}
+
+footer {
+    border-top: #eaeaea 1px solid;
+    padding-top: 40px;
+}
+
+footer nav {
+    padding-bottom: 30px;
+}
+
+footer nav ul li {
+    display: inline;
+    font-size: 0.929em;
+    line-height: 2;
+    margin: 0 20px;
+    white-space: nowrap;
+}
+
+footer nav ul li a:hover {
+    color: #333;
+}
+
+#ftrInfo {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: left;
+    color: #000;
+}
+
+#ftrInfo .ftrOutline {
+    width: 50%;
+    float: left;
+}
+
+#ftrInfo .ftrContact {
+    width: 50%;
+    float: right;
+}
+
+#ftrInfo .ftrOutline h2 {
+    background: url(../images/ico_piano.svg) 0 0 no-repeat;
+    background-size: 36px auto;
+    padding: 0 0 10px 45px;
+    font-weight: bold;
+    font-size: 1.143em;
+}
+
+#ftrInfo .ftrOutline p,
+#ftrInfo .ftrContact p {
+    font-size: 0.923em;
+    line-height: 2;
+}
+
+#ftrInfo .ftrOutline p a {
+    text-decoration: underline;
+}
+
+#ftrInfo .ftrOutline p a:hover {
+    text-decoration: none;
+    color: #333;
+}
+
+#ftrInfo .ftrContact h2 {
+    padding: 0 0 10px 20px;
+    font-weight: bold;
+    font-size: 1.143em;
+}
+
+#ftrInfo .ftrContact p+a {
+    display: block;
+    width: 268px;
+    max-width: 100%;
+    margin: 10px auto 0;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 21px;
+    font-size: 0.929em;
+    color: #fff;
+    background-color: #fb9d9d;
+}
+
+#ftrInfo .ftrContact p+a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+footer .copy {
+    padding: 20px 0;
+    border-top: #eaeaea 1px solid;
+    text-align: center;
+    font-size: 0.846em;
+    color: #999999;
+}
+
+
+/*--------------------------------------------------------------------
+   page title
+---------------------------------------------------------------------*/
+
+#pageTitle {
+    background-color: #f9f9f9;
+}
+
+#pageTitle h2 {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 2.143em;
+    padding: 1.16em 0;
+}
+
+#pageTitle h2 span {
+    font-size: 0.400em;
+    margin-left: 1em;
+}
+
+
+/*--------------------------------------------------------------------
+   container
+---------------------------------------------------------------------*/
+
+
+/* base
+-----------------------*/
+
+div[id="container"] h2,
+div[id="container"] h3,
+div[id="container"] h4,
+div[id="container"] h5,
+div[id="container"] p,
+div[id="container"] li,
+div[id="container"] dt,
+div[id="container"] dd,
+div[id="container"] th,
+div[id="container"] td {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+div[id="container"] p,
+div[id="container"] span,
+div[id="container"] li,
+div[id="container"] dt,
+div[id="container"] dd,
+div[id="container"] th,
+div[id="container"] td {
+    line-height: 1.84;
+    text-align: left;
+}
+
+div[id="container"] h2,
+div[id="container"] h3,
+div[id="container"] h4,
+div[id="container"] h5 {
+    line-height: 1.5;
+}
+
+div[id="container"] article p+section,
+div[id="container"] article section+section {
+    margin-top: 50px;
+}
+
+div[id="container"] article p+p {
+    margin-top: 15px;
+}
+
+div[id="container"] article p a {
+    text-decoration: underline;
+}
+
+div[id="container"] article p a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+
+/*--------------------------------------------------------------------
+   container / layout
+---------------------------------------------------------------------*/
+
+#contents {
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+#container.topPage #contents {
+    padding-top: 0 !important;
+}
+
+.pageBlog article {
+    width: 72.9%;
+    float: left;
+}
+
+.pageBlog aside {
+    width: 22.9%;
+    float: right;
+}
+
+
+/*article
+-----------------------------------------------------*/
+
+
+/*local nav*/
+
+.localNav {
+    padding: 0 0 30px;
+    overflow: hidden;
+}
+
+.activity+.localNav {
+    padding: 0;
+}
+
+.localNav ul li {
+    width: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.localNav ul li a {
+    display: block;
+    width: auto;
+    height: 36px;
+    border-radius: 18px;
+    background-color: #dbdbdb;
+    line-height: 36px;
+    padding: 0 2em;
+    font-size: 0.929em;
+}
+
+.localNav ul li a:hover {
+    background-color: #efefef;
+    color: #333;
+}
+
+
+/*title*/
+
+article h3,
+article .titTypeH3 {
+    font-size: 1.538em;
+    line-height: 1.3;
+    text-align: left;
+    font-weight: bold;
+    color: #000;
+    border-bottom: #333 2px solid;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+
+/*parts
+-----------------------------------------------------*/
+
+#container a.btn01,
+#container p.btn01 a {
+    display: inline-block;
+    width: auto;
+    padding: 0 15px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: auto;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+}
+
+#container a.btn01:hover,
+#container p.btn01 a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#container p.btn01 {
+    text-align: left;
+    padding-top: 20px;
+}
+
+
+/*--------------------------------------------------------------------
+   local page  /top
+---------------------------------------------------------------------*/
+
+#container.topPage {
+    background: #fff url(../images/top/bg_toppage.jpg) center top no-repeat;
+}
+
+#container.topPage #contents {
+    padding-bottom: 0;
+}
+
+
+/*contents link
+-----------------------------------------------------*/
+
+.topBox01 {
+    position: relative;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.topBox01 img {
+    width: 71.8%;
+    float: right;
+    border-radius: 33px;
+}
+
+.topBox01In {
+    width: 300px;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+
+.topBox01In h2 {
+    font-size: 3.857em;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.topBox01In p {
+    width: 225px;
+    padding-bottom: 30px;
+}
+
+.topBox01In p+a,
+.topBox02In p+a,
+.topBox03In p+a,
+#topBlogArea .blogTitle a {
+    display: block;
+    width: 126px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: auto;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    background-color: #fb9d9d;
+}
+
+.topBox01In p+a:hover,
+.topBox02In p+a:hover,
+.topBox03In p+a:hover,
+#topBlogArea .blogTitle a:hover {
+    background-color: rgb(219, 87, 87);
+    color: #fff;
+}
+
+.topBox02 {
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.topBox02 img {
+    width: 37.5%;
+    float: left;
+    border-radius: 33px;
+}
+
+.topBox02In {
+    width: 58.8%;
+    float: right;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.topBox02In h2,
+.topBox03In h2 {
+    font-size: 2.571em;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.topBox02In h2 span,
+.topBox03In h2 span {
+    font-size: 0.361em;
+    margin-left: 1em;
+}
+
+.topBox02In p {
+    width: 500px;
+    max-width: 100%;
+    margin-right: auto;
+    padding-bottom: 25px;
+}
+
+.topBox03 {
+    padding-bottom: 120px;
+    overflow: hidden;
+}
+
+.topBox03 img {
+    width: 37.5%;
+    float: right;
+    border-radius: 33px;
+}
+
+.topBox03In {
+    width: 56.25%;
+    padding-left: 4.68%;
+    float: left;
+    text-align: left;
+}
+
+.topBox03In p {
+    padding-bottom: 25px;
+}
+
+
+/*blog area
+-----------------------------------------------------*/
+
+#topBlogArea {
+    width: 960px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    overflow: hidden;
+}
+
+#topBlogArea .blogTitle {
+    width: 24%;
+    float: left;
+    padding-top: 40px;
+}
+
+#topBlogArea .blogTitle h2 {
+    text-align: center;
+    font-size: 2.571em;
+    color: #000;
+}
+
+#topBlogArea .blogTitle h2 span {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 0.361em;
+}
+
+#topBlogArea .blogTitle a {
+    margin: 0 auto;
+}
+
+#topBlogArea .blogList {
+    width: 76%;
+    float: right;
+    background: url(../images/line_dot_01.gif) top repeat-x;
+}
+
+#topBlogArea dl {
+    background: url(../images/line_dot_01.gif) bottom repeat-x;
+    padding: 12px 15px 10px;
+    overflow: hidden;
+    text-align: left;
+    line-height: 1.84;
+}
+
+#topBlogArea dl dt {
+    width: 16em;
+    float: left;
+    clear: left;
+}
+
+#topBlogArea dl dt span {
+    font-weight: normal;
+    margin-left: 2em;
+    color: #666;
+}
+
+#topBlogArea dl dd {
+    padding-left: 16em;
+}
+
+#topBlogArea dl dd a:hover {
+    color: rgb(219, 87, 87);
+}
+
+
+/*--------------------------------------------------------------------
+   local page  /profile
+---------------------------------------------------------------------*/
+
+.profileBox01,
+.profileBox02 {
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+
+.profileBox01 img {
+    float: right;
+    width: 33.333%;
+}
+
+.profileBox01 div {
+    width: 60%;
+    float: left;
+}
+
+.profileBox02 img {
+    float: left;
+    width: 33.333%;
+}
+
+.profileBox02 div {
+    width: 60%;
+    float: right;
+}
+
+.profileBox01 p+p,
+.profileBox02 p+p {
+    margin-top: 30px;
+}
+
+#movieOut {
+    width: 742px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#movie {
+    position: relative;
+    padding-top: 56.25%;
+}
+
+#movie iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/*--------------------------------------------------------------------
+   local page  /activity
+---------------------------------------------------------------------*/
+
+ul.activity {
+    margin-bottom: 30px;
+}
+
+ul.activity li {
+    padding: 25px 20px;
+    overflow: hidden;
+    text-align: left;
+}
+
+ul.activity li.first {
+    padding-top: 15px;
+}
+
+ul.activity li.odd {
+    background-color: #f9f9f9;
+}
+
+ul.activity li h4 {
+    padding-bottom: 5px;
+    width: 90px;
+    float: left;
+    font-weight: bold;
+}
+
+ul.activity li>div {
+    margin-left: 90px;
+}
+
+ul.activity li>div h5 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+ul.activity li>div h5+h5 {
+    margin-top: 20px;
+}
+
+ul.activity li>div p {
+    padding-bottom: 25px;
+}
+
+ul.activity li>div p.last {
+    padding-bottom: 0;
+}
+
+ul.activity li>div p a {
+    color: #000;
+    text-decoration: underline;
+    margin-left: 1em;
+}
+
+ul.activity li>div p a:hover {
+    color: rgb(219, 87, 87);
+    text-decoration: none;
+}
+
+
+/*--------------------------------------------------------------------
+   local page  /school
+---------------------------------------------------------------------*/
+
+.faq dl {
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: #e7e7e7 1px solid;
+    padding: 10px 15px 5px;
+    border-radius: 3px;
+    position: relative;
+    text-align: left;
+}
+
+.faq dl dt {
+    background: url(../images/ic_arrow_03.svg) 0 50% no-repeat;
+    background-size: 15px auto;
+    padding-left: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq dl:hover {
+    background-color: #ededed;
+}
+
+.faq dl.active {
+    background-color: #f9f9f9 !important;
+}
+
+.faq dl dt.active {
+    background: url(../images/ic_arrow_04.svg) 0 50% no-repeat;
+    background-size: 15px auto;
+}
+
+.faq dl dd {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.schoolBox {
+    overflow: hidden;
+}
+
+.schoolBox img {
+    width: 33.333%;
+    float: right;
+}
+
+.schoolBox>div {
+    width: 60%;
+    float: left;
+}
+
+.flow dl {
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.flow dl dt {
+    width: 4em;
+    float: left;
+    color: #f43a3a;
+    font-weight: bold;
+}
+
+.flow dl dd {
+    padding-left: 4.5em;
+    font-weight: bold;
+}
+
+.price table {
+    width: 100%;
+    margin: 15px 0;
+    border-top: #eaeaea 1px solid;
+    border-left: #eaeaea 1px solid;
+}
+
+.price table th,
+.price table td {
+    border-bottom: #eaeaea 1px solid;
+    border-right: #eaeaea 1px solid;
+    padding: 10px 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.price table td+td {
+    text-align: right;
+}
+
+.price table th {
+    text-align: center;
+    background-color: #f9f9f9;
+    width: 33.333%
+}
+
+.price ul li a {
+    text-decoration: underline;
+}
+
+.price ul li a:hover {
+    text-decoration: none;
+    color: #666;
+}
+
+@media screen and (min-width: 959px) {
+    .price ul li {
+        white-space: nowrap;
+    }
+}
+
+
+/*--------------------------------------------------------------------
+   local page  /contact
+---------------------------------------------------------------------*/
+
+.attention {
+    background-color: #f9f9f9;
+    margin: 20px 0;
+    padding: 20px 20px 10px;
+    text-align: left;
+    color: #000;
+}
+
+.attention dl dt {
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.attention dl dd {
+    padding-bottom: 5px;
+}
+
+#privacy h4 {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+#privacy p {
+    padding-bottom: 0;
+}
+
+#privacy ul li {
+    list-style-type: disc;
+    margin-left: 2em;
+}
+
+
+/*form
+-----------------------------------------------------*/
+
+.formArea table {
+    border-top: #dddddd 1px dotted;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.formArea table th,
+.formArea table td {
+    border-bottom: #dddddd 1px dotted;
+    padding: 15px 30px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.formArea table th {
+    background-color: #f9f9f9;
+    line-height: 30px;
+    color: #000;
+    font-weight: bold;
+    width: 200px;
+}
+
+.formArea table th span {
+    color: #ff3333;
+}
+
+.formArea table td ul li {
+    font-size: 0.929em;
+    padding-bottom: 5px;
+}
+
+.formArea input[type="text"],
+.formArea input[type="email"],
+.formArea input[type="url"],
+.formArea textarea {
+    border: #dfdfdf 1px solid;
+    padding: 4px;
+    width: 450px;
+    max-width: 100%;
+    float: left;
+}
+
+.formArea input.age {
+    width: 160px;
+}
+
+.formArea textarea {
+    float: none;
+    height: 180px;
+    margin-bottom: 10px;
+}
+
+.formArea input[type="checkbox"] {
+    margin-right: 0.5em;
+}
+
+.formArea .btnArea {
+    padding: 50px 0 0;
+    text-align: center;
+}
+
+.formArea .btnArea p {
+    font-size: 0.929em;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.formArea .btnArea input[type="submit"] {
+    width: 180px;
+    height: 42px;
+    border: 0;
+    border-radius: 21px;
+    background-color: #000;
+    line-height: 42px;
+    color: #fff;
+    font-size: 0.929em;
+    cursor: pointer;
+}
+
+.formArea .btnArea input[type="submit"]:hover {
+    background-color: rgb(219, 87, 87);
+}
+
+
+/*--------------------------------------------------------------------
+   local page  /blog
+---------------------------------------------------------------------*/
+
+.pageBlog section {
+    overflow: hidden;
+}
+
+#container.pageBlog section+section {
+    margin-top: 30px;
+}
+
+#container.pageBlog section p a {
+    color: #000;
+    text-decoration: underline;
+}
+
+#container.pageBlog section p a:hover {
+    color: #666;
+    text-decoration: none;
+}
+
+p.date {
+    color: #666666;
+    padding-bottom: 5px;
+}
+
+p.date span {
+    margin-left: 2em;
+}
+
+#container p.date span a {
+    text-decoration: none;
+}
+
+#container p.date span a:hover {
+    text-decoration: underline;
+    color: #666;
+}
+
+.pageBlog section p.more {
+    float: right;
+}
+
+.pageBlog section p.more a {
+    display: block;
+    width: 112px;
+    height: 28px;
+    border-radius: 14px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff !important;
+    font-size: 0.929em;
+    background-color: #000;
+    position: relative;
+    text-decoration: none !important;
+}
+
+.pageBlog section p.more a:hover {
+    background-color: rgb(219, 87, 87);
+}
+
+
+/*pagenav*/
+
+article .pageNav {
+    padding-top: 30px;
+    text-align: center;
+}
+
+article .pageNav a,
+article .pageNav span {
+    display: inline;
+    margin: 0 0.2em;
+    font-weight: bold;
+}
+
+
+/* pager
+--------------*/
+
+.pageNav2 {
+    overflow: hidden;
+    padding-top: 60px;
+    position: relative;
+}
+
+.pageNav2 .prev {
+    float: left;
+    text-align: left;
+    display: block !important;
+}
+
+.pageNav2 .next {
+    float: right;
+    text-align: right;
+    display: block !important;
+}
+
+.pageNav2 .prev a {
+    text-align: left;
+    display: block !important;
+}
+
+.pageNav2 .next a {
+    text-align: right;
+    display: block !important;
+}
+
+.pageNav2 .prev a,
+.pageNav2 .next a {
+    width: 137px;
+    height: 36px;
+    border-radius: 18px;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.929em;
+    background-color: #000;
+    position: relative;
+    text-decoration: none;
+}
+
+.pageNav2 .prev a:hover,
+.pageNav2 .next a:hover {
+    color: #fff;
+    background-color: rgb(219, 87, 87);
+}
+
+.pageNav2 .prev a {
+    margin-right: auto;
+}
+
+.pageNav2 .prev a:before {
+    content: "«";
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+
+.pageNav2 .next a {
+    margin-left: auto;
+}
+
+.pageNav2 .next a:after {
+    content: "»";
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+
+.pageNav2 .prev a:before,
+.pageNav2 .next a:after {
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+
+
+/*aside
+-----------------------------------------------------*/
+
+aside .sideBox {
+    padding-bottom: 30px;
+}
+
+aside .sideBox .tit {
+    text-align: left;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.154em;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    border-top: #999 1px dotted;
+}
+
+aside ul li {
+    border-bottom: #999 1px dotted;
+    text-align: left;
+    font-size: 0.929em;
+    line-height: 1.7;
+}
+
+aside ul li a {
+    display: block;
+    padding: 10px 0;
+}
+
+.sideBox label {
+    display: none;
+}
+
+aside .sideBox select {
+    width: 100%;
+    background: #e2e2e2 url("../images/select.svg") no-repeat scroll 95% 50% / 12px auto;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 5px;
+    line-height: 2;
+}
+
+@media screen and (max-width: 999px) {}
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 374px) {
+    /*iphone5*/
+}

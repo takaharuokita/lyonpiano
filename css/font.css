@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.fn01,
+#pageTitle h2,
+.topBox01In h2,
+.topBox01In p + a,
+.topBox02In h2,
+.topBox02In p + a,
+.topBox03In h2,
+.topBox03In p + a,
+#topBlogArea .blogTitle h2,
+#topBlogArea .blogTitle a{
+    font-family: "mrs-eaves-xl-serif",serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.fnRe,
+#pageTitle h2 span,
+.topBox02In h2 span,
+.topBox03In h2 span,
+#topBlogArea .blogTitle h2 span{
+    font-family:'Lato','ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ','Meiryo',sans-serif;
+}
