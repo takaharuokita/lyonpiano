@@ -1,133 +1,214 @@
 @charset "utf-8";
+
 /*-----------------------------------------------------
 common
 --------------------------------------------------------*/
-	.forPC,
-	.forSP{display:none;}
-	.forTB{display:inherit;}
+
+.forPC,
+.forSP {
+    display: none;
+}
+
+.forTB {
+    display: inherit;
+}
+
 
 /*-----------------------------------------------------
 tablet
 --------------------------------------------------------*/
-img {max-width:100%; height:auto;}
-html{font-size:10px;}
-body{font-size:1.4rem;}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.4rem;
+}
+
+header a:nth-child(2) {
+    line-height: 80px;
+    padding: 10px 14px;
+}
+
 
 /*--------------------------------------------------------------------
    wrap
 ---------------------------------------------------------------------*/
+
 .wrapBox,
-#ftrInfo{
-    padding-left:15px;
-    padding-right:15px;
+#ftrInfo {
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+
 /*--------------------------------------------------------------------
    footer
 ---------------------------------------------------------------------*/
-footer nav ul li{
-    font-size:0.857em;
-    margin:0 1.8vw;
+
+footer nav ul li {
+    font-size: 0.857em;
+    margin: 0 1.8vw;
 }
+
+
 /*--------------------------------------------------------------------
    page title
 ---------------------------------------------------------------------*/
-#pageTitle h2{padding:1.16em 15px;}
+
+#pageTitle h2 {
+    padding: 1.16em 15px;
+}
+
+
 /*--------------------------------------------------------------------
    container
 ---------------------------------------------------------------------*/
-   
+
+
 /*article
 -----------------------------------------------------*/
-/*local nav*/
-.localNav{padding:0 15px 20px;}
-.activity + .localNav{padding:0 15px;}
 
-.localNav ul li{
-    margin-right:2vw;
-    margin-bottom:15px;
+
+/*local nav*/
+
+.localNav {
+    padding: 0 15px 20px;
 }
-.localNav ul li a{padding:0 1.8vw;}
+
+.activity+.localNav {
+    padding: 0 15px;
+}
+
+.localNav ul li {
+    margin-right: 2vw;
+    margin-bottom: 15px;
+}
+
+.localNav ul li a {
+    padding: 0 1.8vw;
+}
+
 
 /*title*/
+
 article h3,
-article .titTypeH3{
-    margin-left:15px;
-    margin-right:15px;   
+article .titTypeH3 {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-article > p,
-section > p{
-    margin-left:15px;
-    margin-right:15px;   
+article>p,
+section>p {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 
 /*--------------------------------------------------------------------
    local page  /top
 ---------------------------------------------------------------------*/
+
+
 /*contents link
 -----------------------------------------------------*/
-.topBox01 img{width:60%;}
-.topBox01In{top:15%; padding-left:15px;}
-.topBox01In h2{font-size:3em;}
-.topBox02In{padding-top:0;}
-.topBox03{padding-bottom:80px;}
-.topBox03In{padding-left:15px;}
+
+.topBox01 img {
+    width: 60%;
+}
+
+.topBox01In {
+    top: 15%;
+    padding-left: 15px;
+}
+
+.topBox01In h2 {
+    font-size: 3em;
+}
+
+.topBox02In {
+    padding-top: 0;
+}
+
+.topBox03 {
+    padding-bottom: 80px;
+}
+
+.topBox03In {
+    padding-left: 15px;
+}
+
 
 /*blog area
 -----------------------------------------------------*/
-#topBlogArea .blogTitle{
-    width:141px;
-    padding-left:15px;
-    }
 
-#topBlogArea .blogList{
-    width:auto;
-    float:none;
-    margin-left:180px;
+#topBlogArea .blogTitle {
+    width: 141px;
+    padding-left: 15px;
 }
+
+#topBlogArea .blogList {
+    width: auto;
+    float: none;
+    margin-left: 180px;
+}
+
 
 /*--------------------------------------------------------------------
    local page  /profile
 ---------------------------------------------------------------------*/
+
 .profileBox01,
 .profileBox02,
-#movieOut{
-    padding-left:15px;
-    padding-right:15px;
+#movieOut {
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+
 /*--------------------------------------------------------------------
    local page  /school
 ---------------------------------------------------------------------*/
+
 .faq,
-.schoolBox{
-    padding-left:15px;
-    padding-right:15px;
+.schoolBox {
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
+
 /*--------------------------------------------------------------------
    local page  /contact
 ---------------------------------------------------------------------*/
-.attention{
-    margin-left:15px;
-    margin-right:15px;
+
+.attention {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 #privacy h4,
 #privacy ul,
-.formArea{
-    padding-left:15px;
-    padding-right:15px;
+.formArea {
+    padding-left: 15px;
+    padding-right: 15px;
 }
+
 
 /*--------------------------------------------------------------------
    local page  /blog
 ---------------------------------------------------------------------*/
-aside{
-    padding-right:15px;
+
+aside {
+    padding-right: 15px;
 }
 
-.pageNav2{
-    padding-left:15px;
-    padding-right:15px;
+.pageNav2 {
+    padding-left: 15px;
+    padding-right: 15px;
 }
-

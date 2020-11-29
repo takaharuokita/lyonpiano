@@ -17,6 +17,19 @@ body {
     font-family: 'Lato', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* IE, Edge ?? */
+    scrollbar-width: none;
+    /* Firefox ?? */
+}
+
+body::-webkit-scrollbar {
+    /* Chrome, Safari ?? */
+    display: none;
+}
+
 .win.chrome body {
     font-family: 'メイリオ', Meiryo, " ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", "MS PGothic", Osaka, Sans-Serif;
 }
@@ -37,16 +50,16 @@ a:link {
     text-decoration: none;
 }
 
-a:visited {
-    color: #000;
-}
-
 a:active {
     color: #000;
 }
 
 a:hover {
-    color: #666;
+    color: rgb(65, 65, 65);
+}
+
+a img:hover {
+    opacity: 0.7;
 }
 
 strong {
@@ -80,6 +93,19 @@ footer nav {
 header {
     height: 150px;
     position: relative;
+}
+
+header a:nth-child(2) {
+    width: 126px;
+    height: 36px;
+    border-radius: 18px;
+    margin-right: auto;
+    line-height: 120px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    background-color: #fb9d9d;
+    padding: 12px 16px;
 }
 
 header h1,
@@ -149,7 +175,7 @@ header nav li.navContact a {
     text-align: center;
 }
 
-header nav li.navContact a:hover {
+header a:hover {
     background-color: rgb(219, 87, 87);
     color: #fff;
 }
@@ -193,7 +219,8 @@ footer nav ul li {
 }
 
 footer nav ul li a:hover {
-    color: #333;
+    background-color: rgb(219, 87, 87);
+    color: #fff;
 }
 
 #ftrInfo {
@@ -234,8 +261,8 @@ footer nav ul li a:hover {
 }
 
 #ftrInfo .ftrOutline p a:hover {
-    text-decoration: none;
-    color: #333;
+    background-color: rgb(219, 87, 87);
+    color: #fff;
 }
 
 #ftrInfo .ftrContact h2 {
@@ -259,7 +286,7 @@ footer nav ul li a:hover {
 }
 
 #ftrInfo .ftrContact p+a:hover {
-    background-color: #333;
+    background-color: rgb(219, 87, 87);
     color: #fff;
 }
 
@@ -412,8 +439,8 @@ div[id="container"] article p a:hover {
 }
 
 .localNav ul li a:hover {
-    background-color: #efefef;
-    color: #333;
+    background-color: rgb(219, 87, 87);
+    color: #fff;
 }
 
 
@@ -452,7 +479,7 @@ article .titTypeH3 {
 
 #container a.btn01:hover,
 #container p.btn01 a:hover {
-    background-color: #333;
+    background-color: rgb(219, 87, 87);
     color: #fff;
 }
 
