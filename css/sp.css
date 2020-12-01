@@ -277,12 +277,16 @@ section>p {
 .topBox01In,
 .topBox02In,
 .topBox03In {
-    width: auto;
+    width: 100%;
     text-align: left;
     position: static;
     top: auto;
     left: auto;
     padding: 35px 15px 0;
+}
+
+.topBox02In li {
+    margin-left: 10%;
 }
 
 .topBox01In h2,

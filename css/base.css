@@ -565,16 +565,20 @@ article .titTypeH3 {
 }
 
 .topBox02 img {
-    width: 37.5%;
+    width: 40.5%;
     float: left;
     border-radius: 33px;
 }
 
 .topBox02In {
-    width: 58.8%;
+    width: 52.8%;
     float: right;
     text-align: left;
     padding-top: 15px;
+}
+
+.topBox02In ol {
+    text-align: center;
 }
 
 .topBox02In h2,
