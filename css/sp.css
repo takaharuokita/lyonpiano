@@ -286,7 +286,7 @@ section>p {
 }
 
 .topBox02In li {
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 .topBox01In h2,
@@ -349,6 +349,7 @@ section>p {
 
 #topBlogArea dl {
     padding: 15px 0 15px;
+    margin-left: 15%;
 }
 
 #topBlogArea dl dt {
@@ -531,4 +532,7 @@ article .pageNav {
 
 @media screen and (max-width: 374px) {
     /*iphone5*/
+    .topBox02In li {
+        margin-left: 10%;
+    }
 }
